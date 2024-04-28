@@ -1,5 +1,5 @@
 const express = require("express");
-const data = require("./data.json");
+const data = require("../data.json");
 const moment = require("moment");
 
 const app = express();
@@ -53,3 +53,5 @@ app.get("/next-collection", (req, res) => {
 });
 
 app.listen(3000, () => console.log("Example app is listening on port 3000."));
+
+module.exports = app;
