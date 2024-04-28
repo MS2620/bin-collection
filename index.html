@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <h2>Make a table based on JSON data.</h2>
+
+    <div id="loop"></div>
+
+    <script type="module">
+      import data from "./data.json" with { type: "json" };
+
+      const frame = document.getElementById("loop");
+
+      data.map((element) => {
+          let newDiv = document.createElement("div");
+          newDiv.id = element.id;
+          newDiv.className = "card";
+          newDiv.innerHTML = `
+          <h2>${element.month}</h2>
+          <p>${element.collection_days}</p>
+          <p>${element.bin_collection}</p>
+          <button class="btn">Lets See</button>`;
+          frame.appendChild(newDiv);
+      });
+    </script>
+  </body>
+</html>
