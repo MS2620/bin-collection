@@ -55,19 +55,19 @@ app.get("/next-collection", (req, res) => {
           );
 
           if (nextMonthCollection) {
-            const nextCollectionDate = moment(
+            const nextMonthCollectionDate = moment(
               nextMonthCollection.date,
               "DD-MM-YYYY"
             );
 
-            responseMessage = `Today was collection day, the next collection is ${nextCollectionDate.format(
+            responseMessage = `Today was collection day, the next collection is ${nextMonthCollectionDate.format(
               "dddd, MMMM Do YYYY"
             )}, for ${nextMonthCollection.bin_collection}.`;
 
-            res.setHeader(
-              "X-Collection-Date",
-              nextCollectionDate.format("DD-MM-YYYY")
-            );
+            res.json({
+              message: responseMessage,
+              date: nextMonthCollectionDate.format("dddd, MMMM Do YYYY"),
+            });
           } else {
             responseMessage = `Today is not a collection day.`;
           }
@@ -80,15 +80,13 @@ app.get("/next-collection", (req, res) => {
         responseMessage = `The next collection day is on ${nextCollectionDate.format(
           "dddd, MMMM Do YYYY"
         )}, for ${nextCollection.bin_collection}.`;
-
-        res.setHeader(
-          "X-Collection-Date",
-          nextCollectionDate.format("DD-MM-YYYY")
-        );
       }
 
       // Send the response message
-      res.send(responseMessage);
+      res.json({
+        message: responseMessage,
+        date: nextCollectionDate.format("dddd, MMMM Do YYYY"),
+      });
       return;
     }
   }
