@@ -63,6 +63,11 @@ app.get("/next-collection", (req, res) => {
             responseMessage = `Today was collection day, the next collection is ${nextCollectionDate.format(
               "dddd, MMMM Do YYYY"
             )}, for ${nextMonthCollection.bin_collection}.`;
+
+            res.setHeader(
+              "X-Collection-Date",
+              nextCollectionDate.format("DD-MM-YYYY")
+            );
           } else {
             responseMessage = `Today is not a collection day.`;
           }
@@ -75,6 +80,11 @@ app.get("/next-collection", (req, res) => {
         responseMessage = `The next collection day is on ${nextCollectionDate.format(
           "dddd, MMMM Do YYYY"
         )}, for ${nextCollection.bin_collection}.`;
+
+        res.setHeader(
+          "X-Collection-Date",
+          nextCollectionDate.format("DD-MM-YYYY")
+        );
       }
 
       // Send the response message
