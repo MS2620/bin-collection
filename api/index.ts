@@ -62,7 +62,9 @@ app.get("/next-collection", (req, res) => {
 
             responseMessage = `Today was collection day, the next collection is ${nextMonthCollectionDate.format(
               "dddd, MMMM Do YYYY"
-            )}, for ${nextMonthCollection.bin_collection}.`;
+            )}, for ${
+              nextMonthCollection.bin_collection
+            }. Would you like to add this to the calendar?`;
 
             res.json({
               message: responseMessage,
@@ -80,7 +82,9 @@ app.get("/next-collection", (req, res) => {
       } else {
         responseMessage = `The next collection day is on ${nextCollectionDate.format(
           "dddd, MMMM Do YYYY"
-        )}, for ${nextCollection.bin_collection}.`;
+        )}, for ${
+          nextCollection.bin_collection
+        }. Would you like to add this to the calendar?`;
       }
 
       // Send the response message
