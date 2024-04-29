@@ -67,6 +67,7 @@ app.get("/next-collection", (req, res) => {
             res.json({
               message: responseMessage,
               date: nextMonthCollectionDate.format("dddd, MMMM Do YYYY"),
+              bins: nextMonthCollection.bin_collection,
             });
           } else {
             responseMessage = `Today is not a collection day.`;
@@ -86,6 +87,7 @@ app.get("/next-collection", (req, res) => {
       res.json({
         message: responseMessage,
         date: nextCollectionDate.format("dddd, MMMM Do YYYY"),
+        bins: nextCollection.bin_collection,
       });
       return;
     }
