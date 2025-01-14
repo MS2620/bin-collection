@@ -1,95 +1,96 @@
 [{
     "month": "January",
     "collection_days": [
-        {"date": "15-01-2024", "bin_collection": "All Bins"} ,
-        {"date": "29-01-2024", "bin_collection": "Brown Bin"}
+        {"date": "06-01-2025", "bin_collection": "All Bins other than brown bin"} ,
+        {"date": "13-01-2025", "bin_collection": "Brown Bin"},
+        {"date": "27-01-2025", "bin_collection": "All Bins"}
     ]
 },
 {
     "month": "February",
     "collection_days": [
-        {"date": "05-02-2024", "bin_collection": "All bins other than brown bin"},
-        {"date": "12-02-2024", "bin_collection": "Brown Bin"},
-        {"date": "26-02-2024", "bin_collection": "All Bins"}
+        {"date": "10-02-2025", "bin_collection": "Brown Bin"},
+        {"date": "17-02-2025", "bin_collection": "All Bins other than brown bin"},
+        {"date": "24-02-2025", "bin_collection": "Brown Bin"}
     ]
 },
 {
     "month": "March",
     "collection_days": [
-        {"date": "11-03-2024", "bin_collection": "Brown Bin"},
-        {"date": "18-03-2024", "bin_collection": "All Bins other than brown bin"},
-        {"date": "25-03-2024", "bin_collection": "Brown Bin"}
+        {"date": "10-03-2025", "bin_collection": "All Bins"},
+        {"date": "24-03-2025", "bin_collection": "Brown Bin"},
+        {"date": "31-03-2025", "bin_collection": "All Bins other than brown bin"}
     ]
 },
 {
     "month": "April",
     "collection_days": [
-        {"date": "08-04-2024", "bin_collection": "All Bins"},
-        {"date": "22-04-2024", "bin_collection": "Brown Bin"},
-        {"date": "29-04-2024", "bin_collection": "All Bins other than brown bin"}
+        {"date": "07-04-2025", "bin_collection": "Brown Bin"},
+        {"date": "21-04-2025", "bin_collection": "All Bins"}
     ]
 },
 {
     "month": "May",
     "collection_days": [
-        {"date": "06-05-2024", "bin_collection": "Brown Bin"},
-        {"date": "20-05-2024", "bin_collection": "All Bins"}
+        {"date": "05-05-2025", "bin_collection": "Brown Bin"},
+        {"date": "12-05-2025", "bin_collection": "All Bins other than brown bin"},
+        {"date": "19-05-2025", "bin_collection": "Brown Bin"}
     ]
 },
 {
     "month": "June",
     "collection_days": [
-        {"date": "03-06-2024", "bin_collection": "Brown Bin"},
-        {"date": "10-06-2024", "bin_collection": "All Bins other than brown bin"},
-        {"date": "17-05-2024", "bin_collection": "Brown Bin"}
+        {"date": "02-06-2025", "bin_collection": "All Bins"},
+        {"date": "16-06-2025", "bin_collection": "Brown Bin"},
+        {"date": "23-06-2025", "bin_collection": "All Bins other than brown bin"},
+        {"date": "30-06-2025", "bin_collection": "Brown Bin"}
     ]
 },
 {
     "month": "July",
     "collection_days": [
-        {"date": "01-07-2024", "bin_collection": "All Bins"},
-        {"date": "15-07-2024", "bin_collection": "Brown Bin"},
-        {"date": "22-07-2024", "bin_collection": "All Bins other than brown bin"},
-        {"date": "29-07-2024", "bin_collection": "Brown Bin"}
+        {"date": "14-07-2025", "bin_collection": "All Bins"},
+        {"date": "28-07-2025", "bin_collection": "Brown Bin"}
     ]
 },
 {
     "month": "August",
     "collection_days": [
-        {"date": "12-08-2024", "bin_collection": "All Bins"},
-        {"date": "26-08-2024", "bin_collection": "Brown Bin"}
+        {"date": "04-08-2025", "bin_collection": "All Bins other than brown bin"},
+        {"date": "11-08-2025", "bin_collection": "Brown Bin"},
+        {"date": "25-08-2025", "bin_collection": "All bins"}
     ]
 },
 {
     "month": "September",
     "collection_days": [
-        {"date": "02-09-2024", "bin_collection": "All Bins other than brown bin"},
-        {"date": "09-09-2024", "bin_collection": "Brown Bin"},
-        {"date": "23-09-2024", "bin_collection": "All Bins"}
+        {"date": "08-09-2025", "bin_collection": "Brown Bin"},
+        {"date": "15-09-2025", "bin_collection": "All Bins other than brown bin"},
+        {"date": "22-09-2025", "bin_collection": "Brown Bin"}
     ]
 },
 {
     "month": "October",
     "collection_days": [
-        {"date": "07-10-2024", "bin_collection": "Brown Bin"},
-        {"date": "14-10-2024", "bin_collection": "All Bins other than brown bin"},
-        {"date": "21-10-2024", "bin_collection": "Brown Bins"}
+        {"date": "06-10-2025", "bin_collection": "All Bins"},
+        {"date": "20-10-2025", "bin_collection": "Brown Bin"},
+        {"date": "27-10-2025", "bin_collection": "All Bins other than brown bin"}
     ]
 },
 {
     "month": "November",
     "collection_days": [
-        {"date": "04-11-2024", "bin_collection": "All Bins"},
-        {"date": "18-11-2024", "bin_collection": "Brown Bin"},
-        {"date": "25-11-2024", "bin_collection": "All Bins other than brown bin"}
+        {"date": "03-11-2025", "bin_collection": "Brown Bin"},
+        {"date": "17-11-2025", "bin_collection": "All Bins"}
     ]
 },
 {
     "month": "December",
     "collection_days": [
-        {"date": "02-12-2024", "bin_collection": "Brown Bin"},
-        {"date": "16-12-2024", "bin_collection": "All Bins"},
-        {"date": "30-12-2024", "bin_collection": "Brown Bin"}
+        {"date": "01-12-2025", "bin_collection": "Brown Bin"},
+        {"date": "08-12-2025", "bin_collection": "All Bins other than brown bin"},
+        {"date": "15-12-2025", "bin_collection": "Brown Bin"},
+        {"date": "29-12-2025", "bin_collection": "All Bins other than brown bin"}
     ]
 }
 ]
