@@ -79,7 +79,7 @@ app.get("/next-collection", (req, res) => {
           const nextCollectionDate = moment(nextCollection.date, "DD-MM-YYYY");
           responseMessage = `Today was collection day, the next collection is ${nextCollectionDate.format(
             "dddd, MMMM Do YYYY"
-          )}, for ${nextCollection.bin_collection}`;
+          )}, for ${nextCollection.bin_collection}.`;
         } else {
           responseMessage = `Today was collection day, and there are no more collection days in the current month.`;
         }
@@ -89,7 +89,7 @@ app.get("/next-collection", (req, res) => {
     } else {
       responseMessage = `The next collection day is on ${nextCollectionDate.format(
         "dddd, MMMM Do YYYY"
-      )}, for ${nextCollection.bin_collection}`;
+      )}, for ${nextCollection.bin_collection}.`;
     }
 
     res.json({
