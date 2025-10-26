@@ -66,7 +66,7 @@ app.get("/next-collection", (req, res) => {
     
     if (nextCollectionDate.isSame(today, "day")) {
       if (moment().isBefore(moment().hour(12), "hour")) {
-        responseMessage = `Today is a collection day, for ${nextCollection.bin_collection}. Collection time: ${nextCollection.start_time} - ${nextCollection.end_time}.`;
+        responseMessage = `Today is a collection day, for ${nextCollection.bin_collection}.`;
       } else {
         // Find the next collection day after today if today's collection has passed
         nextCollection = findNextCollectionDay({
@@ -85,11 +85,11 @@ app.get("/next-collection", (req, res) => {
         }
       }
     } else if (nextCollectionDate.isSame(today.clone().add(1, "days"), "day")) {
-      responseMessage = `The next collection is tomorrow for, ${nextCollection.bin_collection}. Collection time: ${nextCollection.start_time} - ${nextCollection.end_time}.`;
+      responseMessage = `The next collection is tomorrow for, ${nextCollection.bin_collection}.`;
     } else {
       responseMessage = `The next collection day is on ${nextCollectionDate.format(
         "dddd, MMMM Do YYYY"
-      )}, for ${nextCollection.bin_collection}. Collection time: ${nextCollection.start_time} - ${nextCollection.end_time}.`;
+      )}, for ${nextCollection.bin_collection}. `;
     }
     
     res.json({
