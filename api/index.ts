@@ -94,7 +94,7 @@ app.get("/next-collection", (req, res) => {
     
     res.json({
       message: responseMessage,
-      date: nextCollectionDate.format("DD/MM/YYYY"),
+      date: nextCollectionDate.format("YYYY-MM-DD"),
       bins: nextCollection.bin_collection,
       start_time: nextCollection.start_time,
       end_time: nextCollection.end_time,
