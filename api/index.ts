@@ -89,7 +89,7 @@ app.get("/next-collection", (req, res) => {
     } else {
       responseMessage = `The next collection day is on ${nextCollectionDate.format(
         "dddd, MMMM Do YYYY"
-      )}, for ${nextCollection.bin_collection}. `;
+      )}, for ${nextCollection.bin_collection}.`;
     }
     
     res.json({
@@ -97,7 +97,9 @@ app.get("/next-collection", (req, res) => {
       date: nextCollectionDate.format("DD/MM/YYYY"),
       bins: nextCollection.bin_collection,
       start_time: nextCollection.start_time,
-      end_time: nextCollection.end_time
+      end_time: nextCollection.end_time,
+      start_datetime: `${nextCollectionDate.format("YYYY-MM-DD")} ${nextCollection.start_time}:00`,
+      end_datetime: `${nextCollectionDate.format("YYYY-MM-DD")} ${nextCollection.end_time}:00`
     });
   } else {
     res.status(404).send("No upcoming collection day found.");
