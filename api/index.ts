@@ -87,9 +87,7 @@ app.get("/next-collection", (req, res) => {
     } else if (nextCollectionDate.isSame(today.clone().add(1, "days"), "day")) {
       responseMessage = `The next collection day is tomorrow, for ${nextCollection.bin_collection}.`;
     } else {
-      responseMessage = `The next collection day is on ${nextCollectionDate.format(
-        "dddd, MMMM Do YYYY"
-      )}, for ${nextCollection.bin_collection}.`;
+      responseMessage = `${nextCollection.bin_collection}.`;
     }
 
     res.json({
